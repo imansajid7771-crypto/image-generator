@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+  
+  transition: all 0.3s ease;
+}
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background:linear-gradient(135deg, #f1d2ff 10%, #c8c7ff 90%);
+   font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+    --color-primary: #5C56E1;
+    --color-primary-dark: #5b21b6;
+    --color-accent: #8a5cf667;
+    --color-card: #FFFFFF;
+    --color-input: #F1F1FF;
+    --color-text: #09090E;
+    --color-placeholder: #5C5A87;
+    --color-border: #D4D4ED;
+    --color-gradient: linear-gradient(135deg, #5C56E1, #8B5CF6);
+}
+main {
+  width: 800px;
+ 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 23px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 0.1mm solid #bf9dca;
+  position: relative;
+}
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:var(--color-gradient);
+  height: 5px;
+}
+main h1{
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #333;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+.head div {
+  display: flex;
+  gap: 10px;
+}
+
+#mode-toggle{
+  border: 0.1mm solid var(--color-border);
+  height: 43px;
+  width: 43px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: var(--color-input);
+  color:var(--color-placeholder);
+  transition: all 0.3s ease;
+}
+#mode-toggle:hover{
+  background-color: var(--color-accent);
+  transform:translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* ?search */
+
+.search textarea {
+   position: relative;
+  width: 790px;
+  min-height: 100px;
+  margin-top:20px ;
+  border:0.1mm solid var(--color-border);
+  border-radius: 16px;
+  background-color: var(--color-input);
+  max-width: 100%;
+  min-width: 99%;
+}
+.search textarea::placeholder {
+  color: var(--color-placeholder);
+  font-size: 1.2rem;
+  padding: 20px;
+}
+.search textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary);
+}
+#promte{
+  position: absolute;
+  bottom: 27px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: var(--color-gradient);
+  border: none;
+  font-size: 1.2rem;
+}
+#promte:hover{
+  transform:rotate(130deg) translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
