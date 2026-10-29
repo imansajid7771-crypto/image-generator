@@ -89,6 +89,7 @@ main h1{
   background-color: var(--color-input);
   max-width: 100%;
   min-width: 99%;
+  font-size: 1.2rem;
 }
 .search textarea::placeholder {
   color: var(--color-placeholder);
@@ -115,3 +116,5 @@ main h1{
   transform:rotate(130deg) translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
